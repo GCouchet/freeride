@@ -1,0 +1,5 @@
+v_env
+arranque.sh
+db.sqlite3
+/frontend
+/static
