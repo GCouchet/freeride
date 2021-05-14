@@ -13,7 +13,7 @@ class ProductSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Product
-        fields = ['name', 'price', 'digital', 'description', 'image']
+        fields = ['name', 'price', 'digital', 'description', 'image', 'image_url_location']
 
     def get_image_url_location(self, obj):
         return obj.image.url if obj.image else ""
@@ -28,7 +28,7 @@ class OrderSerializer(serializers.ModelSerializer):
 class OrderItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = OrderItem
-        fields = ['product', 'order', 'address', 'quantity', 'date_added']
+        fields = ['product', 'order', 'quantity', 'date_added']
 
 
 class ShippingAddressSerializer(serializers.ModelSerializer):

@@ -1,6 +1,3 @@
-from store.models import Order
-from django.db.models import base
-from django.shortcuts import render_to_response
 from rest_framework import routers
 from .views import CustomerViewSet, ProductViewSet, OrderViewSet, OrderItemViewSet, ShippingAddressViewSet
 
