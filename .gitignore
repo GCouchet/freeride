@@ -3,3 +3,5 @@ arranque.sh
 db.sqlite3
 /frontend
 /static
+/.idea
+.idea
